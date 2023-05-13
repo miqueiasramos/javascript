@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação de Strings</title>
+</head>
+<body>
+    <h1>Compare os caractéris</h1>
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="text" name="txtn2" id="txtn2">
+    <input type="button" value="verificar" onclick="verifica()">
+    <div id="res">Resultado:</div>
+
+    <script>
+        function verifica() {
+           var pais1 = (window.document.querySelector('input#txtn1'))
+           var pais2 = (window.document.querySelector('input#txtn2'))
+           var p1 = (pais1.value.toUpperCase())
+           var p2 = (pais2.value.toUpperCase())
+           res.innerHTML = `Os países analisádos serão ${p1} e o ${p2}. `
+           if(p1 == p2) {
+            res.innerHTML += "Eles são totalmente iguais."
+           } else {
+            res.innerHTML += "Eles são totalmente diferentes"
+           }
+            
+        }
+    </script>
+</body>
+</html>
